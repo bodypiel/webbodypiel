@@ -5,7 +5,7 @@ const ListProduct = () => {
     const [allProducts, setAllProducts] = useState([])
 
     const fetchInfo = async () => {
-        await fetch('http://localhost:4000/allproducts')
+        await fetch('https://webbodypiel-2z3h.onrender.com/allproducts')
             .then((res) => res.json())
             .then((data) => { setAllProducts(data) })
             .catch((error) => console.error("Error al obtener los productos:", error))
@@ -16,7 +16,7 @@ const ListProduct = () => {
     }, [])
     
     const remove_product = async (id) => {
-        await fetch('http://localhost:4000/removeproduct', {
+        await fetch('https://webbodypiel-2z3h.onrender.com/removeproduct', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

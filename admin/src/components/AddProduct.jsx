@@ -28,7 +28,7 @@ const AddProduct = () => {
         let formData = new FormData()
         formData.append('product', image)
 
-        await fetch('http://localhost:4000/upload', {
+        await fetch('https://webbodypiel-2z3h.onrender.com/upload', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -40,7 +40,7 @@ const AddProduct = () => {
             product.image = responseData.img_url
             console.log(product)
 
-            await fetch('http://localhost:4000/addproduct', {
+            await fetch('https://webbodypiel-2z3h.onrender.com/addproduct', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
