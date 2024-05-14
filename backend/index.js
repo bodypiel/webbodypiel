@@ -38,7 +38,7 @@ app.use('/images', express.static('upload/images'))
 app.post('/upload', upload.single('product'), (req, res) => {
     res.json({
         success: 1, 
-        img_url: `http://localhost:${port}/images/${req.file.filename}`
+        img_url: `https://webbodypiel-2z3h.onrender.com/images/${req.file.filename}`
     })
 })
 
