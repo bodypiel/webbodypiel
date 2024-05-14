@@ -27,7 +27,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('/src/assets/img/masaje.jpg')",
-        banneroffer: "url('src/assets/img/spa.jpg')",
+        banneroffer: "url('/src/assets/img/spa.jpg')",
       },
       screens: {
         xs: '400px',
